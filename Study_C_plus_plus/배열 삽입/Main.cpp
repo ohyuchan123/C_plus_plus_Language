@@ -5,6 +5,9 @@ using namespace std;
 // 1, 2, 3, 4, 5 <- 87를 3번째 자리에 삽입
 // 결과 : 1 , 2, 87, 3, 4, 5
 
+// 배열의 단점
+// 배열은 요소를 추가/삭제하는 것이 어렵다!
+
 void Insert(int** pArr, int length, int index, int value);
 
 int main(){
@@ -29,7 +32,7 @@ int main(){
     }
     cout << endl;
 
-    delete[] arr;
+    delete[] arr; // 동적 할당 해제
 }
 
 void Insert(int **pArr, int length, int index, int value)
